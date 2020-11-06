@@ -17,7 +17,7 @@ function StartButton() {
   return (
     <div className={classes.root}>
       <Button variant="contained" color="secondary" onClick={About}>
-        Secondary
+        See My Work
       </Button>
     </div>
   );

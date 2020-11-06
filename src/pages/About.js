@@ -5,16 +5,19 @@ import Nav from '../components/Nav';
 import Languges from '../components/Languges';
 import SimpleContainer from '../components/Container';
 
-function About() {
+const About = () => {
     return (
         <div>
+        <div>
         <Nav />
-        <SimpleContainer>
+        </div>
+       
+        {/* <SimpleContainer> */}
             <h1>About</h1>
             <Summary />
             <AboutPic />
             <Languges />
-        </SimpleContainer>
+        {/* </SimpleContainer> */}
         </div>
     );
 };

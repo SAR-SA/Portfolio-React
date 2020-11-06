@@ -4,7 +4,6 @@ import Intro from "./pages/Intro";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
-import Nav from "./components/Nav";
 import './App.css';
 
 function App() {
@@ -13,6 +12,7 @@ function App() {
       <div>
           <Switch>
             <Route exact path="/" component={Intro} />
+            <Route exact path="/intro" component={Intro} />
             <Route exact path="/about" component={About} />
             <Route exact path="/projects" component={Projects} />
             <Route exact path="/Contact" component={Contact} />
