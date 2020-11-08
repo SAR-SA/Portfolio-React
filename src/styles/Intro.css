@@ -1,0 +1,47 @@
+body, html {
+    
+}
+
+.introDiv {
+    margin: 0 auto;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    resize: both;
+    
+} 
+
+.introContent {
+    margin: 0 auto;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    resize: both;
+    
+}
+
+.introTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introSummary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.introButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
