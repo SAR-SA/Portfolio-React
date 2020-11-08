@@ -1,57 +1,51 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+import React, { useState, useEffect } from 'react';
 import Nav from '../components/Nav';
+import "../styles/Projects.css";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import pic from '../assets/Image1.JPG';
+// import a css file with a class to make things faded, let's cal it .faded
 
-const useStyles = makeStyles({
-    root: {
-        maxWidth: 345,
-    },
-});
+// // isFaded holds State, SetFaded sets the state
+// const [isNotFaded, setNotFaded] = useState(0);
 
-export default function Projects() {
-    const classes = useStyles();
+// // Function should change is hovered
+// function changeFaded(e) {
+//     const id = e.target.id;
+//     setNotFaded(id);
+//     // for all of the cards, if id !== this id, then fade them
+// }
 
+
+function Projects() {
     return (
         <div>
-        <div>
             <Nav />
-        </div>
-            <Card className={classes.root}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        alt="Contemplative Reptile"
-                        height="140"
-                        image="/static/images/cards/contemplative-reptile.jpg"
-                        title="Contemplative Reptile"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">
-                            Lizard
-          </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                            across all continents except Antarctica
-          </Typography>
-                    </CardContent>
-                </CardActionArea>
-                <CardActions>
-                    <Button size="small" color="primary">
-                        Share
-        </Button>
-                    <Button size="small" color="primary">
-                        Learn More
-        </Button>
-                </CardActions>
-            </Card>
+            <h1 className="projectsTitle">Projects</h1>
+            <Container>
+                <Row>
+                    <Col>
+                        <div className="contain col-sm ml-2 mr-2">
+                            <img className="projectsPic" src={pic} alt="" />
+                            <div className="centered">Centered</div>
+                        </div>
+                    </Col>
+                    <Col>
+                        <div className="contain col-sm ml-2 mr-2">
+                            <img className="projectsPic" src={pic} alt="" />
+                            <div className="centered">Centered</div>
+                        </div>
+                    </Col>
+                    <Col>
+                        <div className="contain col-sm ml-2 mr-2">
+                            <img className="projectsPic" src={pic} alt="" />
+                            <div className="centered">Centered</div>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
         </div>
 
     );
 }
+
+export default Projects;

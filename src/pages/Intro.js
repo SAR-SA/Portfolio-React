@@ -5,6 +5,7 @@ import "../styles/Intro.css";
 
 const Intro = () => {
     return (
+        <div>
         <div className="introDiv">
             <div introContent>
                 <h1 className="introTitle">Welcome</h1>
@@ -12,7 +13,7 @@ const Intro = () => {
                 <h2 className="introSummary">I'm a full stack web developer</h2>
                 <a href="/about" className="introButton ">View my Work</a>
             </div>
-
+        </div>
         </div>
     );
 };
