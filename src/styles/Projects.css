@@ -5,18 +5,35 @@
 }
 
 .projectsPic {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 350px;
+}
+
+.mainRow {
+    justify-content: center;
 }
 
 .contain {
     position: relative;
     text-align: center;
     color: white;
+    justify-content: center;
+    cursor: pointer;
   }
+
   .centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .centered {
+      display: none;
+  }
+
+  .contain:hover .centered {
+      display: block;
+      background-color: white;
+      color: black;
   }

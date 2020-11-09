@@ -5,21 +5,34 @@ import Nav from '../components/Nav';
 import Languges from '../components/Languges';
 import "../styles/About.css"
 import Footer from '../components/Footer'
-import SimpleContainer from '../components/Container';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const About = () => {
     return (
         <div>
-        <Nav />
-        {/* <SimpleContainer> */}
+            <Nav />
             <h1 className="aboutTitle">About</h1>
+            <Container>
+            <hr></hr>
             <Summary />
-            <AboutPic />
-            <Languges />
-        {/* </SimpleContainer> */}
-        <Footer />
+                <Row className="aboutRow">
+                <Row>
+                    <Col>
+                    <AboutPic />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                    <Languges />
+                    </Col>
+                </Row>
+                </Row>
+            </Container>
+
+
+            <Footer />
         </div>
-        
+
     );
 };
 

@@ -1,8 +1,8 @@
 import React from 'react';
-import FormControlLabel from '@material-ui/core/FormControl';
-import TextField from '@material-ui/core/TextField';
 import Nav from '../components/Nav';
-import * as ReactBootstrap from "react-bootstrap";
+import Footer from '../components/Footer';
+import { Form, Button, Container } from "react-bootstrap";
+// import {Form, Button} from "react-bootstrap"
 
 const Contact = () => {
     return (
@@ -10,26 +10,28 @@ const Contact = () => {
             <div>
                 <Nav />
             </div>
-
-            <h1>Contact Me!</h1>
-            <ReactBootstrap.Form>
-            <ReactBootstrap.Form.Group controlId="exampleForm.ControlInput1">
-                    <ReactBootstrap.Form.Label>Name</ReactBootstrap.Form.Label>
-                    <ReactBootstrap.Form.Control type="name" placeholder="Enter Full Name" />
-                </ReactBootstrap.Form.Group>
-                <ReactBootstrap.Form.Group controlId="exampleForm.ControlInput1">
-                    <ReactBootstrap.Form.Label>Email address</ReactBootstrap.Form.Label>
-                    <ReactBootstrap.Form.Control type="email" placeholder="name@example.com" />
-                </ReactBootstrap.Form.Group>
-                <ReactBootstrap.Form.Group controlId="exampleForm.ControlTextarea1">
-                    <ReactBootstrap.Form.Label>Message</ReactBootstrap.Form.Label>
-                    <ReactBootstrap.Form.Control as="textarea" rows={3} />
-                </ReactBootstrap.Form.Group>
-            </ReactBootstrap.Form>
-            <ReactBootstrap.Button variant="dark" href="mailto: sarsa.web@gmail.com">Submit</ReactBootstrap.Button>
+            <Container>
+            <h1 className="contactTitle mt-3">Contact Me!</h1>
+            <hr></hr>
+            <Form>
+            <Form.Group controlId="exampleForm.ControlInput1">
+                    <Form.Label>Name</Form.Label>
+                    <Form.Control type="name" placeholder="Enter Full Name" />
+                </Form.Group>
+                <Form.Group controlId="exampleForm.ControlInput1">
+                    <Form.Label>Email address</Form.Label>
+                    <Form.Control type="email" placeholder="name@example.com" />
+                </Form.Group>
+                <Form.Group controlId="exampleForm.ControlTextarea1">
+                    <Form.Label>Message</Form.Label>
+                    <Form.Control as="textarea" rows={3} />
+                </Form.Group>
+            </Form>
+            <Button variant="dark" href="mailto: sarsa.web@gmail.com">Submit</Button>
+            </Container>
+        <Footer />
         </div>
     );
 };
 
 export default Contact;
-

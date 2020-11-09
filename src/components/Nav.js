@@ -1,51 +1,55 @@
 import React from 'react';
-import * as ReactBootstrap from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import Avatar from '../assets/Avatar.JPG';
+import "../styles/Nav.css";
 
 
-function Nav() {
+function NavTop() {
   return (
-    <ReactBootstrap.Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-     <ReactBootstrap.Navbar.Brand href="#home">
-      <img
-        src= { Avatar }
-        width="70"
-        height="70"
-        className="d-inline-block align-top"
-        alt=""
-      />
-      </ReactBootstrap.Navbar.Brand>
-    {/* <ReactBootstrap.Nav className="mr-auto">
-      <ReactBootstrap.Nav.Link href="/about">About</ReactBootstrap.Nav.Link>
-      <ReactBootstrap.Nav.Link href="/projects">Projects</ReactBootstrap.Nav.Link>
-      <ReactBootstrap.Nav.Link href="/contact">Contact</ReactBootstrap.Nav.Link>
-    </ReactBootstrap.Nav> */}
-    <ReactBootstrap.Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <ReactBootstrap.Navbar.Brand href="#home">Shawn A. Rather</ReactBootstrap.Navbar.Brand>
-  <ReactBootstrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
-  <ReactBootstrap.Navbar.Collapse id="responsive-navbar-nav">
-    <ReactBootstrap.Nav className="mr-auto">
-      <ReactBootstrap.Nav.Link href="/about">About</ReactBootstrap.Nav.Link>
-      <ReactBootstrap.Nav.Link href="/projects">Projects</ReactBootstrap.Nav.Link>
-      <ReactBootstrap.Nav.Link href="/contact">Contact</ReactBootstrap.Nav.Link>
-    </ReactBootstrap.Nav>
-    <ReactBootstrap.Nav>
-      <ReactBootstrap.Nav.Link href="#deets">More deets</ReactBootstrap.Nav.Link>
-      <ReactBootstrap.Nav.Link eventKey={2} href="#memes">
-        Dank memes
-      </ReactBootstrap.Nav.Link>
-    </ReactBootstrap.Nav>
-  </ReactBootstrap.Navbar.Collapse>
-</ReactBootstrap.Navbar>
-    {/* <Form inline>
+    <div>
+      <Navbar className="navBar" collapseOnSelect expand="lg" >
+        <Navbar.Brand href="#home">
+          <img
+            src={Avatar}
+            width="70"
+            height="70"
+            className="d-inline-block align-top"
+            alt=""
+          />
+        </Navbar.Brand>
+        {/* <Nav className="mr-auto">
+      <Nav.Link href="/about">About</Nav.Link>
+      <Nav.Link href="/projects">Projects</Nav.Link>
+      <Nav.Link href="/contact">Contact</Nav.Link>
+    </Nav> */}
+        <Navbar className="navBar" collapseOnSelect expand="lg" bg="light" variant="light">
+          <Navbar.Brand id="name">Shawn A. Rather</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mr-auto" >
+              <Nav.Link href="/about">About</Nav.Link>
+              <Nav.Link href="/projects">Projects</Nav.Link>
+              <Nav.Link href="/contact">Contact</Nav.Link>
+            </Nav>
+            {/* <Nav>
+              <Nav.Link href="#deets">More deets</Nav.Link>
+              <Nav.Link eventKey={2} href="#memes">
+                Dank memes
+      </Nav.Link>
+            </Nav> */}
+          </Navbar.Collapse>
+        </Navbar>
+        {/* <Form inline>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
       <Button variant="outline-info">Search</Button>
     </Form> */}
-  </ReactBootstrap.Navbar>
+      </Navbar>
+    </div>
+
   )
 }
 
-export default Nav;
+export default NavTop;
 
 // import PropTypes from 'prop-types';
 // import { makeStyles } from '@material-ui/core/styles';

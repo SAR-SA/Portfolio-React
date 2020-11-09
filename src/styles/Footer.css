@@ -1,0 +1,12 @@
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.link-btns {
+    justify-content: center;
+}
