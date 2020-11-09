@@ -2,9 +2,6 @@ import React from 'react';
 import "../styles/Footer.css"
 import Avatar from '../assets/Avatar.JPG';
 
-import * as ReactBootstrap from "react-bootstrap";
-
-
 function Footer() {
   return (
     <footer>
