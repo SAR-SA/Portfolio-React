@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import Nav from '../components/Nav';
 import "../styles/Projects.css";
 import { Container, Row, Col } from "react-bootstrap";
