@@ -1,6 +1,7 @@
 body, html {
-    
+    background-color: black;
 }
+
 
 .introDiv {
     margin: 0 auto;
@@ -9,7 +10,7 @@ body, html {
     justify-content: center;
     align-items: center;
     resize: both;
-    
+    background-color: black;
 } 
 
 .introContent {
@@ -26,22 +27,29 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: rgb(255, 0, 43);
 }
 
 .introName {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
+    animation-delay: 2s;
 }
 
 .introSummary {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: gray;
+    animation-delay: 3.0s
 } 
 
-.introButton {
+ .introButton {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
+    animation-delay: 4.0s
 } 

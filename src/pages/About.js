@@ -11,7 +11,7 @@ const About = () => {
     return (
         <div>
             <Nav />
-            <h1 className="aboutTitle">About</h1>
+            <h1 className="aboutTitle animate__animated animate__zoomInDown">About</h1>
             <Container>
             <hr></hr>
             <Summary />

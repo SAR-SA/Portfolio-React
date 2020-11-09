@@ -5,7 +5,7 @@ import pic from '../assets/Image1.JPG'
 
 const AboutPic = () => {
 	return ( 
-        <div className="pic-container mr-5 mb-5">
+        <div className="pic-container animate__animated animate__fadeInLeft mr-5 mb-5">
             <img id="picMe" src={pic} alt=""/>
         </div>
     );

@@ -9,27 +9,15 @@ import pic3 from '../assets/WeatherApp.JPG';
 import pic4 from '../assets/WorkDayScheduler Readme.JPG';
 import pic5 from '../assets/Password_Generator_Readme.JPG';
 import pic6 from '../assets/pictures from space.JPG';
-// import a css file with a class to make things faded, let's cal it .faded
-
-// // isFaded holds State, SetFaded sets the state
-// const [isNotFaded, setNotFaded] = useState(0);
-
-// // Function should change is hovered
-// function changeFaded(e) {
-//     const id = e.target.id;
-//     setNotFaded(id);
-//     // for all of the cards, if id !== this id, then fade them
-// }
-
 
 function Projects() {
     return (
         <div>
             <Nav />
-            <h1 className="projectsTitle">Projects</h1>
+            <h1 className="projectsTitle animate__animated animate__zoomIn">Projects</h1>
             <Container>
             <hr></hr>
-                <Row className="mainRow">
+                <Row className="mainRow animate__animated animate__slideInUp">
                     <Row>
                         <Col>
                             <div className="contain mr-2 ml-2 mt-5 mb-8">

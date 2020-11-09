@@ -5,7 +5,7 @@ import { ListGroup } from "react-bootstrap";
 
 function Languages() {
   return (
-    <ListGroup>
+    <ListGroup className="animate__animated animate__fadeInRight">
   <ListGroup.Item variant="primary">Languages</ListGroup.Item>
   <ListGroup.Item variant="light">HTML</ListGroup.Item>
   <ListGroup.Item variant="secondary">CSS</ListGroup.Item>
